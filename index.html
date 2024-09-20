@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="container d-flex">
+            <img id="logo" src="images/лого.png" alt="лого">
+            <nav class="menu">
+            <a href="#giper">Гиперссылки</a>
+            <a href="#table">Таблица</a>
+            <a href="#form">Форма</a>
+            </nav>  
+        </div>
+        <div id="name">
+            <h1>Задание 2</h1>
+        </div>
+    </header>
+    <map  name="nose">
+        <area shape="circle" coords="380,190,70" href="https://ru.wikipedia.org/wiki/Окружность" alt="Тык">
+        <area shape="rect" coords="33,111,260,268" href="https://ru.wikipedia.org/wiki/Прямоугольник" alt="2Тык">
+    </map>
+    <div class="bod">
+        <div id="giper">
+            <div id="name1" >
+                <h2> Список различных гиперссылок:</h2>  
+            </div>
+            <ul >
+                <li><a href="http://kubsu.ru/" target="_blank">Сайт КубГУ</a></li>
+                <li><a href="https://kubsu.ru/" target="_blank">Сайт КубГУ в протоколе https</a></li>
+                <li><a href="https://www.ixbt.com/live/flora_and_fauna/kto-takie-kapibary-i-pochemu-oni-stali-takimi-populyarnymi.html" target="_blank"><img src="images/scale_1200.png" alt="" width="500" title="Капибары отдыхают"></a></li>
+                <li><a href="/page2.html">Внутренняя страница</a></li>
+                <li><a href="/">Главная страница</a></li>
+                <li><a href="#text">Ссылка на текст текущей страницы</a></li>
+                <li><a href="https://www.kubsu.ru/index.php?par1&par2&par3" target="_blank" >Ссылка с 3 параметрами URL </a></li>
+                <li><a href="http://kubsu.ru/?id=32" target="_blank">Ссылка с параметром id в URL</a></li>
+                <li><a href="page2.html">Из текущего каталога</a></li>
+                <li><a href="about/about.html">О нас из каталога about</a></li>
+                <li><a href="../page2.html">Ссылка на уровень выше</a></li>
+                <li><a href="../../page2.html">Ссылка на 2 уровня выше</a></li>
+                <li><p>В Google <a href="https://deepmind.google/discover/blog/advances-in-robot-dexterity/" target="_blank"> утверждают,</a> что научили робота завязывать шнурки и чинить других роботов</p></li>
+                <li> <a href="https://checkroi.ru/blog/top-kursov-dlya-muzhchin/#Marketing">Ссылка на фрагмент стороннего сайта</a></li>
+                <li><img src="images/Прямоугольник-и-круг.png" usemap="#nose" alt="Тык"></li>
+                <li><a href="">Ссылка с пустым href</a></li>
+                <li><a>Ссылка без href</a></li>
+                <li><a href="http://kubsu.ru/" rel="nofollow" target="_blank">Ссылка, по которой запрещен переход поисковикам</a></li>
+                <li>
+                    <!--noindex-->
+                        <a href="http://kubsu.ru/" target="_blank">ССылка, запрещенная для индексации поисковиками</a>
+                    <!--/noindex-->
+                </li>
+                <li>
+                    <ol>
+                        <li><a href="https://жд-билеты.сайт/" target="_blank" title="Купить билеты на поезд">Сайт РЖД</a></li>
+                        <li><a href="https://www.aeroflot.ru/" target="_blank" title="Купить билеты на самолёт">Сайт аерофлота</a></li>
+                    </ol>
+                </li>
+                <li><a href="ftp://user:pass123@tavalik.ru/Temp/file.txt">Сылка на файл на сервере FTP с авторизацией</a></li>
+            </ul>
+        <p id="text"> На этот текст ведёт ссылка из пункта 6</p>
+        </div>
+    <hr>
+    <div id="table">
+        <div id="name2">
+            <h2>Таблица</h2> 
+        </div>
+        <table >
+            <tbody>
+            <tr>
+                <th>Слова А</th>
+                <th>Слова Б</th>
+                <th>Слова В</th>
+                <th>Слова Г</th>
+            </tr>
+            <tr>
+                <td>Арбуз</td>
+                <td colspan="2">Безводный</td>
+                <td>Гвоздь</td>
+            </tr>
+            <tr>
+                <td>Аист</td>
+                <td>Бочка</td>
+                <td>Вершина</td>
+                <td>Гонка</td>
+            </tr>
+            <tr>
+                <td>Ананас</td>
+                <td>Бит</td>
+                <td>Вино</td>
+                <td>Груша</td>
+            </tr>
+            <tr>
+                <td>Астма</td>
+                <td>Берлога</td>
+                <td>Волк</td>
+                <td>Ген</td>
+            </tr>
+            <tr>
+                <td colspan="2">Абрикос</td>
+                <td>Веер</td>
+                <td>Гора</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+<hr>
+    <div id="form">
+        <div id="name3">
+            <h2>Форма</h2>
+        </div>
+        <form  action="23" name="signup" method="post">
+            <div>
+                <label>Введите ФИО:</label>
+                <input type="text" name="username">
+            </div>
+            <label>Введите номер телефона: </label>
+            <input type="tel" name="phone">
+            <div>
+                <label>Введите email:</label>
+                <input type="email" name="email"> 
+            </div>
+
+            <div>
+            <label>Введите день рождения: </label>
+            <input type="date" name="date" value="2005-01-01">
+            </div>
+            <label>Укажите пол: </label>
+            <div>
+            <label><input type="radio" checked="checked"
+                name="Пол" value="1" />
+            Мужской</label>
+            <label><input type="radio"
+                name="Пол" value="2" />
+            Женский</label>
+            </div>
+            <label>
+                Выберите любимый язык програмирования:
+                <br />
+                <select name="sp">
+                <option value="1" selected="selected">Pascal</option>
+                <option value="2" >C</option>
+                <option value="3" >C++</option>
+                <option value="4" >JavaScript</option>
+                <option value="5" >PHP</option>
+                <option value="6" >Python</option>
+                </select>
+            </label><br />
+            
+        <label>
+            Напишите биографию:<br />
+            <textarea name="pole"></textarea>
+        </label><br />
+        <br />
+        <label><input type="checkbox" checked="checked"
+            name="check-1" />
+            С контрактом ознакомлен</label><br />
+
+            <input type="submit" value="Сохранить">
+        </form>
+    </div>
+</div>
+    <footer>
+        <p>
+          (с) Кирбабин Никита, 2024.
+        </p>
+      </footer>
+</body>
+</html>
